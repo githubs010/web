@@ -1,409 +1,305 @@
-<!DOCTYPE html>
-<html>
+# Adding all 17 programs into the HTML file
+
+html_content_all = """<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Display HTML Code as Text</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programs</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+    </style>
 </head>
 <body>
-    <a href="web/indexx.html">onw</a>
-    
-</body>
-<body>
-<br>
-    <h6>Creating Six Levels of Heading Using Horizontal Rules</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h3&gt;Welcome to HTML&lt;/h3&gt;
-        &lt;h2&gt;Raichur University Raichur&lt;/h2&gt;
-        &lt;h3&gt;Dept of Computer Science&lt;/h3&gt;
-        &lt;h4&gt;Name : Maheshkumar&lt;/h4&gt;
-        &lt;h5&gt;Semester : IV Semester&lt;/h5&gt;
-        &lt;h6&gt;Reg No : P23ON21S0126&lt;/h6&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+    <h1>Python Programs</h1>
 
-    <h6>Creating More Than One Paragraph by Using Line Breaks &lt;br&gt; Tag and Spaces with the &lt;pre&gt; Tag</h6>
+    <h2>1. Assigning One Variable Value into Another</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;p&gt;Welcome to HTML&lt;/p&gt;&lt;br&gt;
-        &lt;p&gt;Raichur University Raichur&lt;/p&gt;&lt;br&gt;
-        &lt;p&gt;Dept of Computer Science&lt;/p&gt;&lt;br&gt;
-        &lt;p&gt;Name : Maheshkumar&lt;/p&gt;&lt;br&gt;
-        &lt;pre&gt;Semester : IV Semester&lt;/pre&gt;&lt;br&gt;
-        &lt;pre&gt;Reg No : P23ON21S0126&lt;/pre&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+a = int(input("enter a value:")) 
+b = a 
+print("the value of b:", b)
     </pre>
-    
-    <h6>Formatting Text Using Various Text Formatting Tags</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;b&gt;Welcome to HTML&lt;/b&gt;&lt;br&gt;
-        &lt;strong&gt;Raichur University Raichur&lt;/strong&gt;&lt;br&gt;
-        &lt;i&gt;Dept of Computer Science&lt;/i&gt;&lt;br&gt;
-        &lt;mark&gt;Name : Maheshkumar&lt;/mark&gt;&lt;br&gt;
-        &lt;em&gt;Semester : IV Semester&lt;/em&gt;&lt;br&gt;
-        &lt;small&gt;Reg No : P23ON21S0126&lt;/small&gt;&lt;br&gt;
-        &lt;del&gt;Place : Shahapur&lt;/del&gt;&lt;br&gt;
-        &lt;ins&gt;Course : M.Sc.&lt;/ins&gt;&lt;br&gt;
-        &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;&lt;br&gt;
-        &lt;p&gt;2&lt;sup&gt;3&lt;/sup&gt;=8&lt;/p&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
-    <h6>Setting Styles on the Text</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h3 style="color:blue;"&gt;Welcome to HTML&lt;/h3&gt;
-        &lt;h2 style="color:red;font-family:verdana;"&gt;Raichur University&lt;/h2&gt;
-        &lt;h3 style="font-size:30px;"&gt;Dept of Computer Science&lt;/h3&gt;
-        &lt;h4 style="text-align:center;"&gt;Name : Maheshkumar&lt;/h4&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+    <p><strong>Output:</strong><br>enter a value: 420<br>the value of b: 420</p>
 
-    <h6>Establishing a Link for a Webpage Using &lt;a href&gt;</h6>
+    <h2>2. Store and Display String Value</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h3&gt;Raichur University Website Link&lt;/h3&gt;
-        &lt;a href="https://raichuruniversity.ac.in/"&gt;Raichur University | Home Page&lt;/a&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+Name = input("Enter the string:") 
+print("NAME =", Name)
     </pre>
-   
-    <h6>Changing the Colors of Links (Visited and Unvisited)</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;style&gt;
-        a:link {
-            color:blue;
-        }
-        a:visited {
-            color:red;
-        }
-        &lt;/style&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        &lt;h3&gt;Raichur University Website Link&lt;/h3&gt;
-        &lt;a href="https://raichuruniversity.ac.in/"&gt;Raichur University | Home Page&lt;/a&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+    <p><strong>Output:</strong><br>Enter the string: Computer Science<br>NAME = Computer Science</p>
 
-    <h6>Adding an Image Using &lt;img&gt; Tag and Setting Height and Width Using Attributes</h6>
+    <h2>3. Display Factorial of N Number</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h2&gt;Raichur University Logo&lt;/h2&gt;
-        &lt;img src="C:\Users\admin\Downloads\download.jpg" width="500" height="600"&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-   
-    <h6>Creating Ordered Lists Using Different Types of Ordering</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;ol&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol type="1"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol type="A"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol type="a"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol type="I"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol type="i"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol start="50"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-   
-    <h6>Creating Unordered Lists Using Different Types of Ordering</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;ul style="list-style-type:disc"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul style="list-style-type:circle"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul style="list-style-type:square"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul style="list-style-type:none"&gt;
-        &lt;li&gt;Mahesh&lt;/li&gt;
-        &lt;li&gt;Chandu&lt;/li&gt;
-        &lt;li&gt;Chandu Lover&lt;/li&gt;
-        &lt;li&gt;Chandu GF&lt;/li&gt;
-        &lt;li&gt;Chandu Bestiee... : Lav&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+def factorial(x): 
+    if x == 1: 
+        return x 
+    else: 
+        return x * factorial(x-1)
 
-    <h6>Illustrating Marquee Tag with Slide, Scroll, and Alternate Behavior</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;p&gt;Slide&lt;/p&gt;
-        &lt;marquee behavior="slide" bgcolor="pink"&gt;Raichur University&lt;/marquee&gt;&lt;br&gt;
-        &lt;p&gt;Scroll&lt;/p&gt;
-        &lt;marquee behavior="scroll" bgcolor="green" style="color:white"&gt;Master of Science&lt;/marquee&gt;&lt;br&gt;
-        &lt;p&gt;Alternate&lt;/p&gt;
-        &lt;marquee style="color:red" direction="down" behavior="alternate" bgcolor="yellow" width="300" height="300"&gt;Dept of Computer Science&lt;/marquee&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+n = int(input("Enter a number:")) 
+if n < 0: 
+    print("Negative number does not exist") 
+elif n == 0: 
+    print("Factorial of zero is: 1") 
+else: 
+    print("The factorial of", n, "is", factorial(n))
     </pre>
-    
+    <p><strong>Output:</strong><br>Enter a number: 5<br>The factorial of 5 is 120</p>
 
-    <h6>Creating a Table Consisting Information About Students and Illustrating Row Span and Column Span Attributes</h6>
+    <h2>4. Display Sum of Digits of a Number</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;style&gt;
-        table, th, td {
-        border:1px solid black;
-        border-collapse:collapse;
-        text-align:center;
-        }
-        &lt;/style&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        &lt;table&gt;
-        &lt;tbody&gt;
-        &lt;tr&gt;
-        &lt;th colspan="2"&gt;Name&lt;/th&gt;
-        &lt;th rowspan="2"&gt;Age&lt;/th&gt;
-        &lt;th rowspan="2"&gt;Course&lt;/th&gt;
-        &lt;th rowspan="2"&gt;Dept&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;th&gt;First Name&lt;/th&gt;
-        &lt;th&gt;Last Name&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Maheshkumar&lt;/td&gt;
-        &lt;td&gt;Hiremath&lt;/td&gt;
-        &lt;td&gt;23&lt;/td&gt;
-        &lt;td rowspan="3"&gt;M.Sc.&lt;/td&gt;
-        &lt;td rowspan="3"&gt;CS&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Devaraja&lt;/td&gt;
-        &lt;td&gt;Dass&lt;/td&gt;
-        &lt;td&gt;24&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Sharanabasava&lt;/td&gt;
-        &lt;td&gt;Godehala&lt;/td&gt;
-        &lt;td&gt;23&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/tbody&gt;
-        &lt;/table&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+n = int(input("Enter a number:")) 
+sum = 0 
+n1 = n 
+while(n != 0): 
+    sum = sum + (n % 10) 
+    n = n // 10 
+print("The sum of", n1, "number is:", sum)
     </pre>
-    
+    <p><strong>Output:</strong><br>Enter a number: 780<br>The sum of 780 number is: 15</p>
 
-    <h6>Creating a Table Consisting Information About Company and Illustrating Cell Padding and Cell Spacing Attributes</h6>
+    <h2>5. Display Quadratic Equation</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;style&gt;
-        table, th, td {
-        border:1px solid black;
-        text-align:center;
-        padding:10px;
-        }
-        &lt;/style&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        &lt;table cellspacing="10px"&gt;
-        &lt;tbody&gt;
-        &lt;tr&gt;
-        &lt;th colspan="4"&gt;Employee's Detail's&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;th&gt;Emp Id&lt;/th&gt;
-        &lt;th&gt;Emp Name&lt;/th&gt;
-        &lt;th&gt;Dept No&lt;/th&gt;
-        &lt;th&gt;Emp City&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;101&lt;/td&gt;
-        &lt;td&gt;Sharana&lt;/td&gt;
-        &lt;td&gt;15&lt;/td&gt;
-        &lt;td&gt;Lingasugur&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;102&lt;/td&gt;
-        &lt;td&gt;Radha&lt;/td&gt;
-        &lt;td&gt;20&lt;/td&gt;
-        &lt;td&gt;Bhatkal&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/tbody&gt;
-        &lt;/table&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+a = int(input("Enter value of A:")) 
+b = int(input("Enter value of B:")) 
+c = int(input("Enter value of C:")) 
+print(f"The quadratic equation is {a}x^2 + {b}x + {c} = 0")
     </pre>
-   
-    <h6>Inserting Audio and Video</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h2&gt;Click Play button to play audio&lt;/h2&gt;
-        &lt;audio src="E:\function\devamma.mp3" controls=""&gt;&lt;/audio&gt;
-        &lt;h2&gt;Click Play button to play video&lt;/h2&gt;
-        &lt;video src="G:\mahesh photos\videos\VID-20211022-WA0045.mp4" controls=""&gt;&lt;/video&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+    <p><strong>Output:</strong><br>Enter value of A: 15<br>Enter value of B: 20<br>Enter value of C: 10<br>The quadratic equation is 15x^2 + 20x + 10 = 0</p>
 
-    <h6>Creating Four Horizontal Frames</h6>
+    <h2>6. Convert Kilogram into Pounds</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;title&gt;Frame tag&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;frameset rows="50%,50%"&gt;
-        &lt;frame src="r1.html"&gt;
-        &lt;frame src="r2.html"&gt;
-        &lt;/frameset&gt;
-        &lt;/html&gt;
+kg = int(input("Enter the weight in Kilogram:")) 
+pounds = 2.205 * kg 
+print("After converting", kg, "KG to pounds is:", pounds, "lb")
     </pre>
-   
+    <p><strong>Output:</strong><br>Enter the weight in Kilogram: 15<br>After converting 15 KG to pounds is: 33.075 lb</p>
 
-    <h6>Creating Four Vertical Frames</h6>
+    <h2>7. Check the Largest Among 5 Numbers</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;title&gt;Frame tag&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;frameset cols="50%,50%"&gt;
-        &lt;frame src="r1.html"&gt;
-        &lt;frame src="r2.html"&gt;
-        &lt;/frameset&gt;
-        &lt;/html&gt;
+list = [] 
+n = int(input("Enter number of elements:")) 
+for i in range(1, n + 1): 
+    ele = int(input("Enter the element:")) 
+    list.append(ele) 
+print("The largest number is", max(list))
     </pre>
-    
+    <p><strong>Output:</strong><br>Enter number of elements: 5<br>Enter the element: 90<br>Enter the element: 70<br>Enter the element: 50<br>Enter the element: 30<br>Enter the element: 10<br>The largest number is 90</p>
 
-    <h6>Navigation Between Web Pages</h6>
+    <h2>8. Display Fibonacci Sequence for N Terms</h2>
     <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h3&gt;The Navigation Links&lt;/h3&gt;
-        &lt;nav&gt;
-        &lt;a href="https://www.google.com"&gt;Google | Home Page&lt;/a&gt;&lt;br&gt;
-        &lt;a href="https://raichuruniversity.ac.in"&gt;Raichur University | Home Page&lt;/a&gt;&lt;br&gt;
-        &lt;a href="https://gug.ac.in"&gt;Gulbarga University | Home Page&lt;/a&gt;
-        &lt;/nav&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
+def fib(n): 
+    a = 0 
+    b = 1 
+    if n == 1: 
+        print(a) 
+    else: 
+        print(a) 
+        print(b) 
+        for i in range(2, n): 
+            c = a + b 
+            a = b 
+            b = c 
+            print(c)
 
-    <h6>Creating a Form for User Inputs (Text Fields, Password Fields, Radio Buttons, Checkboxes, and Submit Button)</h6>
-    <pre>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;h2&gt;HTML Forms&lt;/h2&gt;
-        &lt;form&gt;
-        &lt;h3&gt;User inputs&lt;/h3&gt;
-        &lt;label&gt;First Name: &lt;/label&gt;&lt;input type="text"&gt;&lt;br&gt;
-        &lt;label&gt;Last Name: &lt;/label&gt;&lt;input type="text"&gt;&lt;br&gt;
-        &lt;h3&gt;Radio Buttons&lt;/h3&gt;
-        &lt;input type="radio" name="subject"&gt;&lt;label&gt;HTML&lt;/label&gt;&lt;br&gt;
-        &lt;input type="radio" name="subject"&gt;&lt;label&gt;CSS&lt;/label&gt;&lt;br&gt;
-        &lt;input type="radio" name="subject"&gt;&lt;label&gt;JAVA&lt;/label&gt;&lt;br&gt;
-        &lt;h3&gt;Check Boxes&lt;/h3&gt;
-        &lt;input type="checkbox" name="subject"&gt;&lt;label&gt;HTML&lt;/label&gt;&lt;br&gt;
-        &lt;input type="checkbox" name="subject"&gt;&lt;label&gt;CSS&lt;/label&gt;&lt;br&gt;
-        &lt;input type="checkbox" name="subject"&gt;&lt;label&gt;JAVA&lt;/label&gt;&lt;br&gt;
-        &lt;h3&gt;User ID, Password and Submit Button&lt;/h3&gt;
-        &lt;label&gt;User ID: &lt;/label&gt;&lt;input type="text"&gt;&lt;br&gt;
-        &lt;label&gt;Password: &lt;/label&gt;&lt;input type="password"&gt;&lt;br&gt;
-        &lt;input type="submit" value="Submit"&gt;
-        &lt;/form&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+ele = int(input("Enter the number:")) 
+fib(ele)
     </pre>
-    <p>Output:</p>
-    <p>Web Design Lab</p>
+    <p><strong>Output:</strong><br>Enter the number: 5<br>0<br>1<br>1<br>2<br>3</p>
+
+    <h2>9. Print First 10 Even Numbers Using While Loop</h2>
+    <pre>
+count = 0 
+n = 2 
+print("The first 10 even numbers are:") 
+while count < 10: 
+    print(n) 
+    n = n + 2 
+    count = count + 1
+    </pre>
+    <p><strong>Output:</strong><br>The first 10 even numbers are:<br>2<br>4<br>6<br>8<br>10<br>12<br>14<br>16<br>18<br>20</p>
+
+    <h2>10. Demonstrate While Loop with Else</h2>
+    <pre>
+count = 0 
+n = 2 
+print("The first 10 even numbers are:") 
+while count < 10: 
+    print(n) 
+    n = n + 2 
+    count = count + 1 
+else: 
+    print("End of while loop")
+    </pre>
+    <p><strong>Output:</strong><br>The first 10 even numbers are:<br>2<br>4<br>6<br>8<br>10<br>12<br>14<br>16<br>18<br>20<br>End of while loop</p>
+
+    <h2>11. Print Prime Numbers in a User-Provided Range</h2>
+    <pre>
+m = int(input("Enter starting prime number:")) 
+n = int(input("Enter end prime number:")) 
+print("Prime numbers between", m, "to", n, "are:") 
+for i in range(m, n + 1): 
+    if i > 1: 
+        for j in range(2, i): 
+            if (i % j) == 0: 
+                break 
+        else: 
+            print(i)
+    </pre>
+    <p><strong>Output:</strong><br>Enter starting prime number: 10<br>Enter end prime number: 25<br>Prime numbers between 10 to 25 are:<br>11<br>13<br>17<br>19<br>23</p>
+
+    <h2>12. Find the ASCII Value of a Character</h2>
+    <pre>
+n = input("Enter a character:") 
+print("The ASCII value of", n, "is:", ord(n))
+    </pre>
+    <p><strong>Output:</strong><br>Enter a character: D<br>The ASCII value of D is: 68</p>
+
+    <h2>13. Sum of Several Natural Numbers Using Recursion</h2>
+    <pre>
+def sum_numbers(n): 
+    result = 0 
+    if n == 1: 
+        result = 1 
+    else: 
+        result = n + sum_numbers(n - 1) 
+    return result
+
+n = int(input("Enter a number:")) 
+sum = sum_numbers(n) 
+print(f"Sum of first", n, "numbers:", sum)
+    </pre>
+    <p><strong>Output:</strong><br>Enter a number: 10<br>Sum of first 10 numbers: 55</p>
+
+    <h2>14. Python String Functions</h2>
+    <pre>
+a. lower()
+str = "COMPUTER SCIENCE" 
+print(str.lower())
+
+Output:
+computer science
+
+b. upper()
+str = "computer science" 
+print(str.upper())
+
+Output:
+COMPUTER SCIENCE
+
+c. isdigit()
+str = "143" 
+print(str.isdigit())
+str = "Computer" 
+print(str.isdigit())
+
+Output:
+True
+False
+
+d. isspace()
+str = "   " 
+print(str.isspace())
+str = "computer" 
+print(str.isspace())
+
+Output:
+True
+False
+
+e. find()
+msg = "Python is a fun programming language" 
+print(msg.find('a'))
+
+Output:
+10
+
+f. replace()
+str = "Good Morning" 
+new_str = str.replace("Good", "Great") 
+print(new_str)
+
+Output:
+Great Morning
+
+g. count()
+str = "Problem solving with Python program" 
+char_count = str.count("a") 
+print(char_count)
+
+Output:
+1
+
+h. len()
+str = "Computer science" 
+length = len(str) 
+print("The length of given string:", length)
+
+Output:
+The length of given string: 16
+    </pre>
+
+    <h2>15. Print Half of Tuple Values in One Line and Other Half in Next Line</h2>
+    <pre>
+tuple = (1, 3, 5, 7, 9, 2, 4, 6, 8, 10) 
+tuple1 = tuple[:5] 
+tuple2 = tuple[5:] 
+print(tuple1) 
+print(tuple2)
+    </pre>
+    <p><strong>Output:</strong><br>(1, 3, 5, 7, 9)<br>(2, 4, 6, 8, 10)</p>
+
+    <h2>16. Print a Tuple Whose Values Are the Cube of Numbers Between 1 and 15</h2>
+    <pre>
+tuple = (1, 2) 
+result = [(num, num ** 3) for num in tuple] 
+print(result)
+    </pre>
+    <p><strong>Output:</strong><br>[(1, 1), (2, 8)]</p>
+
+    <h2>17. Demonstrate Built-In Dictionary Methods</h2>
+    <h3>1. copy()</h3>
+    <pre>
+dict = {"a": 4, "b": 5, "c": 6} 
+dict_c = dict.copy() 
+dict_c["b"] = 2 
+print(dict) 
+print(dict_c)
+    </pre>
+    <p><strong>Output:</strong><br>{'a': 4, 'b': 5, 'c': 6}<br>{'a': 4, 'b': 2, 'c': 6}</p>
+
+    <h3>2. items()</h3>
+    <pre>
+dict = {"a": 4, "b": 5, "c": 6} 
+for key, value in dict.items(): 
+    print(key, "-", value)
+    </pre>
+    <p><strong>Output:</strong><br>a - 4<br>b - 5<br>c - 6</p>
+
+    <h3>3. update()</h3>
+    <pre>
+dict = {"a": 4, "b": 5, "c": 6} 
+dict_up = {"a": 8, "m": 2, "v": 7} 
+dict.update(dict_up) 
+print(dict)
+    </pre>
+    <p><strong>Output:</strong><br>{'a': 8, 'b': 5, 'c': 6, 'm': 2, 'v': 7}</p>
+
+    <h3>4. keys()</h3>
+    <pre>
+dict = {"a": 10, "b": 20, "c": 30} 
+for key in dict.keys(): 
+    print(key)
+    </pre>
+    <p><strong>Output:</strong><br>a<br>b<br>c</p>
+
+    <h3>5. any()</h3>
+    <pre>
+dict = {"a": 10, "b": 20, "c": 30} 
+print(any(dict))
+    </pre>
+    <p><strong>Output:</strong><br>True</p>
 </body>
 </html>
+"""
