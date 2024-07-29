@@ -1,0 +1,118 @@
+1. Features of Python
+Python is a popular programming language known for its simplicity and readability. Here are some key features:
+
+Easy to Learn and Use: Python has a simple syntax that mimics natural language, making it easy for beginners to learn and understand.
+Interpreted Language: Python code is executed line by line, which makes debugging easier.
+Cross-platform: Python can run on various operating systems such as Windows, macOS, and Linux.
+Extensive Standard Library: Python has a vast standard library that includes modules and functions for various tasks, reducing the need for external libraries.
+Dynamic Typing: Variables in Python are not explicitly typed, meaning you can assign different data types to the same variable without any issue.
+Object-Oriented: Python supports object-oriented programming, allowing for encapsulation, inheritance, and polymorphism.
+Community Support: Python has a large and active community, providing extensive resources, libraries, and frameworks.
+2. Explain input() function in Python
+The input() function is used to take input from the user. It reads a line from the input (usually from the keyboard), converts it into a string, and returns it.
+
+python
+Copy code
+name = input("Enter your name: ")
+print("Hello, " + name + "!")
+When you run this code, it will prompt the user to enter their name and then greet them using the input.
+
+3. Explain print() function in Python
+The print() function is used to output text or other data to the console.
+
+python
+Copy code
+print("Hello, World!")
+This will print the string "Hello, World!" to the console. The print() function can take multiple arguments, which it will print separated by spaces.
+
+python
+Copy code
+print("Hello", "World!")
+This will print "Hello World!" with a space between the two strings.
+
+4. Explain decision control statements in Python
+Decision control statements allow you to control the flow of execution based on conditions. The main decision control statements in Python are:
+
+if statement: Executes a block of code if a condition is true.
+
+python
+Copy code
+age = 18
+if age >= 18:
+    print("You are an adult.")
+if-else statement: Provides an alternative block of code if the condition is false.
+
+python
+Copy code
+age = 16
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+if-elif-else statement: Tests multiple conditions sequentially.
+
+python
+Copy code
+score = 85
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+5. Explain looping statements in Python
+Looping statements allow you to repeat a block of code multiple times. The main looping statements in Python are:
+
+for loop: Iterates over a sequence (like a list, tuple, or string).
+
+python
+Copy code
+for i in range(5):
+    print(i)
+This will print numbers from 0 to 4.
+
+while loop: Repeats a block of code as long as a condition is true.
+
+python
+Copy code
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+This will also print numbers from 0 to 4.
+
+6. Explain string methods in Python
+String methods are functions that perform specific operations on strings. Here are some commonly used string methods:
+
+len(): Returns the length of a string.
+
+python
+Copy code
+len("hello")  # Output: 5
+upper(): Converts all characters in a string to uppercase.
+
+python
+Copy code
+"hello".upper()  # Output: "HELLO"
+lower(): Converts all characters in a string to lowercase.
+
+python
+Copy code
+"HELLO".lower()  # Output: "hello"
+strip(): Removes leading and trailing whitespace.
+
+python
+Copy code
+"  hello  ".strip()  # Output: "hello"
+replace(): Replaces occurrences of a substring with another substring.
+
+python
+Copy code
+"hello world".replace("world", "Python")  # Output: "hello Python"
+split(): Splits a string into a list of substrings based on a delimiter.
+
+python
+Copy code
+"hello world".split()  # Output: ["hello", "world"]
