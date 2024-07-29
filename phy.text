@@ -1,0 +1,342 @@
+Python Programs
+1. Assigning One Variable Value into Another
+a = int(input("enter a value:")) 
+b = a 
+print("the value of b:", b)
+    
+Output:
+enter a value: 420
+the value of b: 420
+
+2. Store and Display String Value
+Name = input("Enter the string:") 
+print("NAME =", Name)
+    
+Output:
+Enter the string: Computer Science
+NAME = Computer Science
+
+3. Display Factorial of N Number
+def factorial(x): 
+    if x == 1: 
+        return x 
+    else: 
+        return x * factorial(x-1)
+
+n = int(input("Enter a number:")) 
+if n < 0: 
+    print("Negative number does not exist") 
+elif n == 0: 
+    print("Factorial of zero is: 1") 
+else: 
+    print("The factorial of", n, "is", factorial(n))
+    
+Output:
+Enter a number: 5
+The factorial of 5 is 120
+
+4. Display Sum of Digits of a Number
+n = int(input("Enter a number:")) 
+sum = 0 
+n1 = n 
+while(n != 0): 
+    sum = sum + (n % 10) 
+    n = n // 10 
+print("The sum of", n1, "number is:", sum)
+    
+Output:
+Enter a number: 780
+The sum of 780 number is: 15
+
+5. Display Quadratic Equation
+a = int(input("Enter value of A:")) 
+b = int(input("Enter value of B:")) 
+c = int(input("Enter value of C:")) 
+print(f"The quadratic equation is {a}x^2 + {b}x + {c} = 0")
+    
+Output:
+Enter value of A: 15
+Enter value of B: 20
+Enter value of C: 10
+The quadratic equation is 15x^2 + 20x + 10 = 0
+
+6. Convert Kilogram into Pounds
+kg = int(input("Enter the weight in Kilogram:")) 
+pounds = 2.205 * kg 
+print("After converting", kg, "KG to pounds is:", pounds, "lb")
+    
+Output:
+Enter the weight in Kilogram: 15
+After converting 15 KG to pounds is: 33.075 lb
+
+7. Check the Largest Among 5 Numbers
+list = [] 
+n = int(input("Enter number of elements:")) 
+for i in range(1, n + 1): 
+    ele = int(input("Enter the element:")) 
+    list.append(ele) 
+print("The largest number is", max(list))
+    
+Output:
+Enter number of elements: 5
+Enter the element: 90
+Enter the element: 70
+Enter the element: 50
+Enter the element: 30
+Enter the element: 10
+The largest number is 90
+
+8. Display Fibonacci Sequence for N Terms
+def fib(n): 
+    a = 0 
+    b = 1 
+    if n == 1: 
+        print(a) 
+    else: 
+        print(a) 
+        print(b) 
+        for i in range(2, n): 
+            c = a + b 
+            a = b 
+            b = c 
+            print(c)
+
+ele = int(input("Enter the number:")) 
+fib(ele)
+    
+Output:
+Enter the number: 5
+0
+1
+1
+2
+3
+
+9. Print First 10 Even Numbers Using While Loop
+count = 0 
+n = 2 
+print("The first 10 even numbers are:") 
+while count < 10: 
+    print(n) 
+    n = n + 2 
+    count = count + 1
+    
+Output:
+The first 10 even numbers are:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+10. Demonstrate While Loop with Else
+count = 0 
+n = 2 
+print("The first 10 even numbers are:") 
+while count < 10: 
+    print(n) 
+    n = n + 2 
+    count = count + 1 
+else: 
+    print("End of while loop")
+    
+Output:
+The first 10 even numbers are:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+End of while loop
+
+11. Print Prime Numbers in a User-Provided Range
+m = int(input("Enter starting prime number:")) 
+n = int(input("Enter end prime number:")) 
+print("Prime numbers between", m, "to", n, "are:") 
+for i in range(m, n + 1): 
+    if i > 1: 
+        for j in range(2, i): 
+            if (i % j) == 0: 
+                break 
+        else: 
+            print(i)
+    
+Output:
+Enter starting prime number: 10
+Enter end prime number: 25
+Prime numbers between 10 to 25 are:
+11
+13
+17
+19
+23
+
+12. Find the ASCII Value of a Character
+n = input("Enter a character:") 
+print("The ASCII value of", n, "is:", ord(n))
+    
+Output:
+Enter a character: D
+The ASCII value of D is: 68
+
+13. Sum of Several Natural Numbers Using Recursion
+def sum_numbers(n): 
+    result = 0 
+    if n == 1: 
+        result = 1 
+    else: 
+        result = n + sum_numbers(n - 1) 
+    return result
+
+n = int(input("Enter a number:")) 
+sum = sum_numbers(n) 
+print(f"Sum of first", n, "numbers:", sum)
+    
+Output:
+Enter a number: 10
+Sum of first 10 numbers: 55
+
+14. Python String Functions
+a. lower()
+str = "COMPUTER SCIENCE" 
+print(str.lower())
+
+Output:
+computer science
+
+b. upper()
+str = "computer science" 
+print(str.upper())
+
+Output:
+COMPUTER SCIENCE
+
+c. isdigit()
+str = "143" 
+print(str.isdigit())
+str = "Computer" 
+print(str.isdigit())
+
+Output:
+True
+False
+
+d. isspace()
+str = "   " 
+print(str.isspace())
+str = "computer" 
+print(str.isspace())
+
+Output:
+True
+False
+
+e. find()
+msg = "Python is a fun programming language" 
+print(msg.find('a'))
+
+Output:
+10
+
+f. replace()
+str = "Good Morning" 
+new_str = str.replace("Good", "Great") 
+print(new_str)
+
+Output:
+Great Morning
+
+g. count()
+str = "Problem solving with Python program" 
+char_count = str.count("a") 
+print(char_count)
+
+Output:
+1
+
+h. len()
+str = "Computer science" 
+length = len(str) 
+print("The length of given string:", length)
+
+Output:
+The length of given string: 16
+    
+15. Print Half of Tuple Values in One Line and Other Half in Next Line
+tuple = (1, 3, 5, 7, 9, 2, 4, 6, 8, 10) 
+tuple1 = tuple[:5] 
+tuple2 = tuple[5:] 
+print(tuple1) 
+print(tuple2)
+    
+Output:
+(1, 3, 5, 7, 9)
+(2, 4, 6, 8, 10)
+
+16. Print a Tuple Whose Values Are the Cube of Numbers Between 1 and 15
+tuple = (1, 2) 
+result = [(num, num ** 3) for num in tuple] 
+print(result)
+    
+Output:
+[(1, 1), (2, 8)]
+
+17. Demonstrate Built-In Dictionary Methods
+1. copy()
+dict = {"a": 4, "b": 5, "c": 6} 
+dict_c = dict.copy() 
+dict_c["b"] = 2 
+print(dict) 
+print(dict_c)
+    
+Output:
+{'a': 4, 'b': 5, 'c': 6}
+{'a': 4, 'b': 2, 'c': 6}
+
+2. items()
+dict = {"a": 4, "b": 5, "c": 6} 
+for key, value in dict.items(): 
+    print(key, "-", value)
+    
+Output:
+a - 4
+b - 5
+c - 6
+
+3. update()
+dict = {"a": 4, "b": 5, "c": 6} 
+dict_up = {"a": 8, "m": 2, "v": 7} 
+dict.update(dict_up) 
+print(dict)
+    
+Output:
+{'a': 8, 'b': 5, 'c': 6, 'm': 2, 'v': 7}
+
+4. keys()
+dict = {"a": 10, "b": 20, "c": 30} 
+for key in dict.keys(): 
+    print(key)
+    
+Output:
+a
+b
+c
+
+5. any()
+dict = {"a": 10, "b": 20, "c": 30} 
+print(any(dict))
+    
+Output:
+True
+
+"""
