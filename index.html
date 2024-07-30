@@ -3,314 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Programs</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            color: transparent; /* Makes all text transparent d*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        pre { 
-            background-color: #ffffff; 
-            padding: 10px; 
-            border: 1px solid #ddd; 
-            color: transparent; /* Makes text inside <pre> transparent */
-        }
-        /* Optional: if you want to make text within specific elements (like headings) transparent */
-        h1, h2, h3, p {
+        .poem {
+            white-space: pre-wrap;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
             color: transparent;
         }
     </style>
 </head>
 <body>
-    <h1>Python Programs</h1>
-
-    <h2>1. Assigning One Variable Value into Another</h2>
-    <pre>
-a = int(input("enter a value:")) 
-b = a 
-print("the value of b:", b)
-    </pre>
-    <p><strong>Output:</strong><br>enter a value: 420<br>the value of b: 420</p>
-
-    <h2>2. Store and Display String Value</h2>
-    <pre>
-Name = input("Enter the string:") 
-print("NAME =", Name)
-    </pre>
-    <p><strong>Output:</strong><br>Enter the string: Computer Science<br>NAME = Computer Science</p>
-
-    <h2>3. Display Factorial of N Number</h2>
-    <pre>
-def factorial(x): 
-    if x == 1: 
-        return x 
-    else: 
-        return x * factorial(x-1)
-
-n = int(input("Enter a number:")) 
-if n < 0: 
-    print("Negative number does not exist") 
-elif n == 0: 
-    print("Factorial of zero is: 1") 
-else: 
-    print("The factorial of", n, "is", factorial(n))
-    </pre>
-    <p><strong>Output:</strong><br>Enter a number: 5<br>The factorial of 5 is 120</p>
-
-    <h2>4. Display Sum of Digits of a Number</h2>
-    <pre>
-n = int(input("Enter a number:")) 
-sum = 0 
-n1 = n 
-while(n != 0): 
-    sum = sum + (n % 10) 
-    n = n // 10 
-print("The sum of", n1, "number is:", sum)
-    </pre>
-    <p><strong>Output:</strong><br>Enter a number: 780<br>The sum of 780 number is: 15</p>
-
-    <h2>5. Display Quadratic Equation</h2>
-    <pre>
-a = int(input("Enter value of A:")) 
-b = int(input("Enter value of B:")) 
-c = int(input("Enter value of C:")) 
-print(f"The quadratic equation is {a}x^2 + {b}x + {c} = 0")
-    </pre>
-    <p><strong>Output:</strong><br>Enter value of A: 15<br>Enter value of B: 20<br>Enter value of C: 10<br>The quadratic equation is 15x^2 + 20x + 10 = 0</p>
-
-    <h2>6. Convert Kilogram into Pounds</h2>
-    <pre>
-kg = int(input("Enter the weight in Kilogram:")) 
-pounds = 2.205 * kg 
-print("After converting", kg, "KG to pounds is:", pounds, "lb")
-    </pre>
-    <p><strong>Output:</strong><br>Enter the weight in Kilogram: 15<br>After converting 15 KG to pounds is: 33.075 lb</p>
-
-    <h2>7. Check the Largest Among 5 Numbers</h2>
-    <pre>
-list = [] 
-n = int(input("Enter number of elements:")) 
-for i in range(1, n + 1): 
-    ele = int(input("Enter the element:")) 
-    list.append(ele) 
-print("The largest number is", max(list))
-    </pre>
-    <p><strong>Output:</strong><br>Enter number of elements: 5<br>Enter the element: 90<br>Enter the element: 70<br>Enter the element: 50<br>Enter the element: 30<br>Enter the element: 10<br>The largest number is 90</p>
-
-    <h2>8. Display Fibonacci Sequence for N Terms</h2>
-    <pre>
-def fib(n): 
-    a = 0 
-    b = 1 
-    if n == 1: 
-        print(a) 
-    else: 
-        print(a) 
-        print(b) 
-        for i in range(2, n): 
-            c = a + b 
-            a = b 
-            b = c 
-            print(c)
-
-ele = int(input("Enter the number:")) 
-fib(ele)
-    </pre>
-    <p><strong>Output:</strong><br>Enter the number: 5<br>0<br>1<br>1<br>2<br>3</p>
-
-    <h2>9. Print First 10 Even Numbers Using While Loop</h2>
-    <pre>
-count = 0 
-n = 2 
-print("The first 10 even numbers are:") 
-while count < 10: 
-    print(n) 
-    n = n + 2 
-    count = count + 1
-    </pre>
-    <p><strong>Output:</strong><br>The first 10 even numbers are:<br>2<br>4<br>6<br>8<br>10<br>12<br>14<br>16<br>18<br>20</p>
-
-    <h2>10. Demonstrate While Loop with Else</h2>
-    <pre>
-count = 0 
-n = 2 
-print("The first 10 even numbers are:") 
-while count < 10: 
-    print(n) 
-    n = n + 2 
-    count = count + 1 
-else: 
-    print("End of while loop")
-    </pre>
-    <p><strong>Output:</strong><br>The first 10 even numbers are:<br>2<br>4<br>6<br>8<br>10<br>12<br>14<br>16<br>18<br>20<br>End of while loop</p>
-
-    <h2>11. Print Prime Numbers in a User-Provided Range</h2>
-    <pre>
-m = int(input("Enter starting prime number:")) 
-n = int(input("Enter end prime number:")) 
-print("Prime numbers between", m, "to", n, "are:") 
-for i in range(m, n + 1): 
-    if i > 1: 
-        for j in range(2, i): 
-            if (i % j) == 0: 
-                break 
-        else: 
-            print(i)
-    </pre>
-    <p><strong>Output:</strong><br>Enter starting prime number: 10<br>Enter end prime number: 25<br>Prime numbers between 10 to 25 are:<br>11<br>13<br>17<br>19<br>23</p>
-
-    <h2>12. Find the ASCII Value of a Character</h2>
-    <pre>
-n = input("Enter a character:") 
-print("The ASCII value of", n, "is:", ord(n))
-    </pre>
-    <p><strong>Output:</strong><br>Enter a character: D<br>The ASCII value of D is: 68</p>
-
-    <h2>13. Sum of Several Natural Numbers Using Recursion</h2>
-    <pre>
-def sum_numbers(n): 
-    result = 0 
-    if n == 1: 
-        result = 1 
-    else: 
-        result = n + sum_numbers(n - 1) 
-    return result
-
-n = int(input("Enter a number:")) 
-sum = sum_numbers(n) 
-print(f"Sum of first", n, "numbers:", sum)
-    </pre>
-    <p><strong>Output:</strong><br>Enter a number: 10<br>Sum of first 10 numbers: 55</p>
-
-    <h2>14. Python String Functions</h2>
-    <pre>
-a. lower()
-str = "COMPUTER SCIENCE" 
-print(str.lower())
-
-Output:
-computer science
-
-b. upper()
-str = "computer science" 
-print(str.upper())
-
-Output:
-COMPUTER SCIENCE
-
-c. isdigit()
-str = "143" 
-print(str.isdigit())
-str = "Computer" 
-print(str.isdigit())
-
-Output:
-True
-False
-
-d. isspace()
-str = "   " 
-print(str.isspace())
-str = "computer" 
-print(str.isspace())
-
-Output:
-True
-False
-
-e. find()
-msg = "Python is a fun programming language" 
-print(msg.find('a'))
-
-Output:
-10
-
-f. replace()
-str = "Good Morning" 
-new_str = str.replace("Good", "Great") 
-print(new_str)
-
-Output:
-Great Morning
-
-g. count()
-str = "Problem solving with Python program" 
-char_count = str.count("a") 
-print(char_count)
-
-Output:
-1
-
-h. len()
-str = "Computer science" 
-length = len(str) 
-print("The length of given string:", length)
-
-Output:
-The length of given string: 16
-    </pre>
-
-    <h2>15. Print Half of Tuple Values in One Line and Other Half in Next Line</h2>
-    <pre>
-tuple = (1, 3, 5, 7, 9, 2, 4, 6, 8, 10) 
-tuple1 = tuple[:5] 
-tuple2 = tuple[5:] 
-print(tuple1) 
-print(tuple2)
-    </pre>
-    <p><strong>Output:</strong><br>(1, 3, 5, 7, 9)<br>(2, 4, 6, 8, 10)</p>
-
-    <h2>16. Print a Tuple Whose Values Are the Cube of Numbers Between 1 and 15</h2>
-    <pre>
-tuple = (1, 2) 
-result = [(num, num ** 3) for num in tuple] 
-print(result)
-    </pre>
-    <p><strong>Output:</strong><br>[(1, 1), (2, 8)]</p>
-
-    <h2>17. Demonstrate Built-In Dictionary Methods</h2>
-    <h3>1. copy()</h3>
-    <pre>
-dict = {"a": 4, "b": 5, "c": 6} 
-dict_c = dict.copy() 
-dict_c["b"] = 2 
-print(dict) 
-print(dict_c)
-    </pre>
-    <p><strong>Output:</strong><br>{'a': 4, 'b': 5, 'c': 6}<br>{'a': 4, 'b': 2, 'c': 6}</p>
-
-    <h3>2. items()</h3>
-    <pre>
-dict = {"a": 4, "b": 5, "c": 6} 
-for key, value in dict.items(): 
-    print(key, "-", value)
-    </pre>
-    <p><strong>Output:</strong><br>a - 4<br>b - 5<br>c - 6</p>
-
-    <h3>3. update()</h3>
-    <pre>
-dict = {"a": 4, "b": 5, "c": 6} 
-dict_up = {"a": 8, "m": 2, "v": 7} 
-dict.update(dict_up) 
-print(dict)
-    </pre>
-    <p><strong>Output:</strong><br>{'a': 8, 'b': 5, 'c': 6, 'm': 2, 'v': 7}</p>
-
-    <h3>4. keys()</h3>
-    <pre>
-dict = {"a": 10, "b": 20, "c": 30} 
-for key in dict.keys(): 
-    print(key)
-    </pre>
-    <p><strong>Output:</strong><br>a<br>b<br>c</p>
-
-    <h3>5. any()</h3>
-    <pre>
-dict = {"a": 10, "b": 20, "c": 30} 
-print(any(dict))
-    </pre>
-    <p><strong>Output:</strong><br>True</p>
+    
+    <div class="poem">
+        <h3>Program 1: Add Positive Numbers</H3>
+        
+        def add_positive_numbers(x, y):
+            assert x > 0 and y > 0, "Both numbers must be positive"
+            return x + y
+        
+        # Test cases
+        print(add_positive_numbers(2, 3))  # Should output: 5
+        print(add_positive_numbers(-1, 3))  # Should raise AssertionError
+       
+        <h3>Program 2: Square Function with Unittest</h3>
+        
+        import unittest
+        
+        def square(x):
+            return x ** 2
+        
+        class TestSquareFunction(unittest.TestCase):
+        
+            def test_square_positive(self):
+                self.assertEqual(square(2), 4)
+                self.assertEqual(square(0), 0)
+        
+            def test_square_negative(self):
+                self.assertEqual(square(-2), 4)
+        
+        if __name__ == '__main__':
+            unittest.main()
+       
+        <h3>Program 3: Mocking Example</h3>
+        
+        from unittest.mock import Mock
+        
+        # Function to test
+        def get_data():
+            return "Real data"
+        
+        # Mocking the get_data function
+        mock_get_data = Mock(return_value="Mocked data")
+        
+        # Testing function that uses get_data
+        def process_data():
+            data = get_data()
+            return data.upper()
+        
+        print(process_data())  # Output: "REAL DATA"
+        
+        # Using the mock instead
+        get_data = mock_get_data
+        print(process_data())  # Output: "MOCKED DATA"
+        
+        <h3>Program 4: Divide Function with Unittest</h3>
+        
+        import unittest
+        
+        def divide(x, y):
+            if y == 0:
+                raise ValueError("Cannot divide by zero")
+            return x / y
+        
+        class TestDivideFunction(unittest.TestCase):
+        
+            def test_divide_positive(self):
+                self.assertEqual(divide(6, 2), 3)
+                self.assertEqual(divide(5, 1), 5)
+        
+            def test_divide_negative(self):
+                self.assertEqual(divide(-6, 2), -3)
+                self.assertEqual(divide(6, 2), 3)
+        
+            def test_divide_by_zero(self):
+                with self.assertRaises(ValueError) as context:
+                    divide(4, 0)
+                self.assertEqual(str(context.exception), "Cannot divide by zero")
+        
+            def test_divide_zero_numerator(self):
+                self.assertEqual(divide(0, 2), 0)
+        
+        if __name__ == '__main__':
+            unittest.main()
+        
+        <h3>Program 5: Factorial Function with Pytest</h3>
+        
+        import pytest
+        
+        def factorial(n):
+            if n == 0:
+                return 1
+            return n * factorial(n - 1)
+        
+        @pytest.mark.parametrize("input, expected", [
+            (0, 1),
+            (1, 1),
+            (2, 2),
+            (5, 120),
+            (10, 3628800),
+        ])
+        
+        def test_factorial(input, expected):
+            assert factorial(input) == expected
+        
+        
+        <h2>Output Expectations
+        Add Positive Numbers:
+        
+        add_positive_numbers(2, 3) should output: 5
+        add_positive_numbers(-1, 3) should raise AssertionError
+        Square Function Unittest:
+        
+        Running the tests should show no errors if the square function is correct.
+        Mocking Example:
+        
+        First process_data() call should output: REAL DATA
+        After mocking, process_data() call should output: MOCKED DATA
+        Divide Function Unittest:
+        
+        Running the tests should show no errors if the divide function is correct.
+        Factorial Function Pytest:
+        
+        Running the tests should show no errors if the factorial function is correct.
+    </h2>
+    </div>
 </body>
 </html>
-"""
