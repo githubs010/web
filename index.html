@@ -23,14 +23,887 @@
     <div class="poem">
         <h2>
             
+
+
+  
 1. Python program for assigning one variable value into another.
+
 a=int(input("enter a values:"))
 b=a
 print("the value of b :",b)
+
 output
 enter a values:300
 the value of b : 300
-        </2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Python program to store string value and display string value.
+
+Name=input("Enter the string:")
+print("NAME=",Name)
+
+output
+Enter the string:prasad
+NAME= prasad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Python program to display factorial of N number.
+def factorial(x):
+    if x == 1:
+        return x
+    else:
+        return x * factorial(x - 1)
+
+n = int(input("Enter a number: "))
+
+if n < 0:
+    print("Negative number does not have a factorial")
+elif n == 0:
+    print("Factorial of zero is: 1")
+else:
+    print("The factorial of", n, "is", factorial(n))
+
+
+Output
+
+The factorial of 5 is 120
+Factorial of zero is: 1
+
+
+
+
+
+
+4. Python program to display sum of 780 number.
+n = int(input("Enter a number:"))
+sum = 0
+n1 = n
+while n != 0:
+    sum += n % 10
+    n = n // 10
+print(f"The sum of {n1} number is: {sum}")
+
+Output
+Enter a number: 850
+The sum of 850 number is: 13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Python program to display quadratic equation.
+a=int(input("Enter value of A:"))
+b=int(input("Enter value of B:"))
+c=int(input("Enter value of C:"))
+print(f"The quadratic equation is {a}x^2+{b}x+{c}=0")
+
+Output
+Enter value of A:2
+Enter value of B:3
+Enter value of C:44
+The quadratic equation is 2x^2+3x+44=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. Python program to convert kilogram into pound.
+kg=int(input("Enter the waight in Kilogram :"))
+pounds=2.205*kg
+print("after convertiong ",kg,"KG to pounds is:",pounds,"lb")
+
+Output
+Enter the waight in Kilogram :10
+after convertiong  10 KG to pounds is: 22.05 lb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Python program to check the largest among the given 5 numbers.
+list=[]
+n=int(input("Enter number of elements:"))
+for i in range(1,n+1):
+ ele=int(input("Enter the element:"))
+ list.append(ele)
+print("The largest number is",max(list))
+
+Output
+Enter number of elements:5
+Enter the element:40
+Enter the element:50
+Enter the element:40
+Enter the element:60
+Enter the element:70
+The largest number is 70
+
+
+
+
+
+
+
+
+
+
+8. Python program to display the Fibonacci sequence for N terms.
+
+def fib(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+
+ele = int(input("Enter the number: "))
+fib(ele)
+
+Output
+Enter the number: 4
+0
+1
+1
+2
+
+
+9. Python program to Print first 10 even numbers using while loop.
+count = 0
+n = 2
+print("The first 10 even numbers are:")
+while count < 10:
+    print(n)
+    n = n + 2
+    count = count + 1
+
+Output
+The first 10 even numbers are:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+
+
+
+
+10. Python program to program to demonstrate While loop with else.
+count = 0
+n = 2
+print("The first 10 even numbers are:")
+while count < 10:
+    print(n)
+    n = n + 2
+    count = count + 1
+else:
+    print("End of while loop")
+
+Output
+The first 10 even numbers are:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+End of while loop
+
+
+11. Python program to print the prime numbers for a user provided range.
+m = int(input("Enter starting prime number: "))
+n = int(input("Enter end prime number: "))
+print("Prime numbers between", m, "and", n, "are:")
+
+for i in range(m, n + 1):
+    if i > 1:
+        for j in range(2, i):
+            if (i % j) == 0:
+                break
+        else:
+            print(i)
+
+Output
+Enter starting prime number: 30
+Enter end prime number: 45
+Prime numbers between 30 and 45 are:
+31
+37
+41
+43
+
+
+
+
+
+12. Python program to find the ASCII value of the character.
+n = input("Enter a character: ")
+print("The ASCII value of", n, "is:", ord(n))
+
+Output
+Enter a character: P
+The ASCII value of P is: 80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13. Python program to find the sum of several natural numbers using recursion.
+def sum_numbers(n):
+    result = 0
+    if n == 1:
+        result = 1
+    else:
+        result = n + sum_numbers(n - 1)
+    return result
+
+n = int(input("Enter a number: "))
+sum = sum_numbers(n)
+print(f"Sum of first {n} numbers: {sum}")
+
+Output 
+Enter a number: 16
+Sum of first 16 numbers: 136
+
+
+
+
+
+
+
+
+
+
+14. Python string program for the following functions.
+a. Lower() b. Upper() c. isdigit() d. isspace()
+e. Find() f. Replace() g. Count() h. Len()
+
+a. Lower()
+str="COMPUTER SCIENCE"
+print(str.lower())
+
+Output:
+ computer science
+
+ b. Upper()
+str="computer science"
+print(str.upper())
+
+Output:
+COMPUTER SCIENCE
+
+c. isdigit()
+str="143"
+print(str.isdigit())
+str="Computer"
+print(str.isdigit())
+
+Output:
+ True
+ False 
+d. isspace()
+str=" "
+print(str.isspace())
+str="computer"
+print(str.isspace())
+
+Output:
+ True
+ False
+
+e. Find()
+mgs="Python is a fun programming language"
+print(mgs.find('a'))
+
+Output:
+ 10
+
+f. Replace()
+str="Good Morning"
+new_str=str.replace("Good","Great")
+print(new_str)
+
+Output:
+ Great Morning
+
+g. Count()
+str="Problem solving with Python program"
+char_count=str.count("a")
+print(char_count)
+
+Output:
+ 1
+
+h. Len()
+str="Computer science"
+length=len(str)
+print("The length of given string:",length)
+
+Output:
+ The length of given string: 16
+
+15.Consider the tuple (1,3,5,7,9,2,4,6,8,10).Write a program to print halfits values in one line and the other half in the next line.
+
+tuple = (1, 3, 5, 7, 9, 2, 4, 6, 8, 10)
+tuple1 = tuple[:5]  
+tuple2 = tuple[5:]  
+print(tuple1)
+print(tuple2)
+
+Output 
+(1, 3, 5, 7, 9)
+(2, 4, 6, 8, 10)
+
+16. Python program to demonstrate the function that prints a tuple whose values are the cube of a number between 1 and 15.
+
+tuple = (1, 2)
+result = [(num, num**3) for num in tuple]
+print(result)
+
+Output 
+[(1, 1), (2, 8)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17. Python program to demonstrate Built-In Dictionary Methods.
+1. copy() 2. items() 3. update() 4. keys() 5. any()
+
+1. copy()
+dict={"a":4,"b":5,"c":6}
+dict_c=dict.copy()
+dict_c["b"]=2
+print(dict)
+print(dict_c)
+
+Output:
+ {'a': 4, 'b': 5, 'c': 6}
+ {'a': 4, 'b': 2, 'c': 6}
+
+2. items()
+dict={"a":4,"b":5,"c":6}
+for key,value in dict.items():
+ print(key,"-",value)
+
+Output:
+ a - 4
+ b - 5
+ c – 6
+
+3. update()
+dict={"a":4,"b":5,"c":6}
+dict_up={"a":8,"m":2,"v":7}
+dict.update(dict_up)
+print(dict)
+
+Output:
+ {'a': 8, 'b': 5, 'c': 6, 'm': 2, 'v': 7}
+
+4. keys()
+dict={"a":10,"b":20,"c":30}
+for key in dict.keys():
+ print(key)
+
+Output:
+ a
+ b
+ c
+
+5. any()
+dict={"a":10,"b":20,"c":30}
+print(any(dict))
+
+Output:
+ True
+
+
+
+
+18. Python program to Write a custom exception that could be raised when the text entered by a user consists of less than 6 characters.
+
+class CustomException(Exception):
+    pass
+
+try:
+    a = input("Enter a string: ")
+    if len(a) < 6:
+        raise CustomException
+    else:
+        print("String has more than 6 characters")
+except CustomException:
+    print("String has less than 6 characters")
+
+Output 
+1. Enter a string : Computer
+ String have more than 6 characters
+2. Enter a string : CS
+ String have less than 6 characters  
+
+
+
+
+ 
+19. Python program to write a function to print the hash of any given file in python. (Hint:Use SHA-1 algorithm).
+import hashlib
+
+def hash_file(filename):
+    h = hashlib.sha1()
+    with open(filename, 'rb') as file:
+        chunk = 0
+        while chunk != b'':
+            chunk = file.read(1024)
+            h.update(chunk)
+    return h.hexdigest()
+
+message = hash_file("python18.py")
+print(message)
+
+Output 
+0ed5842eab466d0e9174d2116dd30d5dadf42fac
+
+
+
+
+
+
+
+
+
+20. Python program to write a program to write data in a file for both write and append modes.
+# Open the file in write mode
+f = open('data.txt', 'w')
+f.write('This is the first line.\n')
+f.write('This is the second line.\n')
+f.close()
+
+# Open the file in append mode
+f = open('data.txt', 'a')
+f.write('This is the third line.\n')
+f.write('This is the fourth line.\n')
+f.close()
+
+# Open the file in read mode
+f = open('data.txt', 'r')
+print(f.read())
+f.close()
+
+Output 
+This is the first line.
+This is the second line.
+This is the third line.
+This is the fourth line.
+
+
+
+21. Python program to demonstrate multiple Inheritance.
+class A:
+    def showx(x):
+        print('x =', x)
+
+class B:
+    def showy(y):
+        print('y =', y)
+
+class C(A, B):
+    def set(i, j):
+        A.showx(i)
+        B.showy(j)
+cl = C()
+cl.set(10, 20)
+
+Output 
+x = 10
+y = 20
+
+
+
+
+
+
+
+22. Python program that defines a class with two methods: inputStr() that will get the string using console input and printStr() that will print the string in uppercase. Also, test the class methods with a function.
+class ab:
+    def getString(self):
+        self.s = input('Enter the string: ')
+    
+    def printString(self):
+        print(self.s.upper())
+
+c = ab()
+c.getString()
+c.printString()
+
+Output 
+Enter the string : Computer
+COMPUTER
+
+
+
+
+
+
+
+
+
+
+23. Python program to display a pyramid.
+rows = int(input("Enter number of rows: "))
+print("Full Pyramid Pattern of Stars(*):")
+
+for i in range(rows):
+    # Print leading spaces
+    for s in range(rows - i - 1):
+        print(" ", end=" ")
+    
+    # Print stars
+    for j in range(i + 1):
+        print("* ", end="")
+    
+    print()  # Move to the next line after each row
+
+Output 
+Enter number of rows: 6
+Full Pyramid Pattern of Stars(*):
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+
+
+24. Python program to find the sum of the following series:1 + 2 + 3 + …+ n
+def sum_of_series(n):
+    return n * (n + 1) // 2
+
+n = int(input("Enter the positive integer(n): "))
+
+if n < 0:
+    print("Please enter a positive integer.")
+else:
+    result = sum_of_series(n)
+    print(f"The sum of the series 1+2+........+{n} is:", result)
+
+Output 
+Enter the positive integer(n):10
+The sum of the series 1+2+........+10 is: 55
+
+
+
+
+
+
+
+
+
+
+
+25. Python program to draw a circle.
+import turtle
+t = turtle.Turtle()
+r = 50
+t.circle(r)  
+Output
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26. Python program to draw a 3D-bar.
+import turtle
+t = turtle.Turtle()
+r = int(input("Enter the radius of the circle: "))
+col = input("Enter the color name or hex value of color(# RRGGBB): ")
+t.fillcolor(col)
+t.begin_fill()
+t.circle(r)
+t.end_fill()  
+Output 
+ Enter the radius of the circle: 60
+ Enter the color name or hex value of color(# RRGGBB): red
+ 
+
+
+
+
+
+
+
+27. Python program to draw a shape and fill it with colour.
+import time
+now = time.ctime()
+print("Current time: ", now)
+
+Output 
+Current time: Wed Nov 10 02:01:06 2010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28. Python program to display date, time by using built in python modules.
+# Importing date class from datetime module
+from datetime import date
+
+# Creating the date object for today's date
+todays_date = date.today()
+
+# Printing today's date
+print("Current date:", todays_date)
+print("Current Day:", todays_date.day)
+print("Current Month:", todays_date.month)
+print("Current Year:", todays_date.year)
+
+output
+Current date: 2024-08-17
+Current Day: 17
+Current Month: 8
+Current Year: 2024
+
+
+
+
+
+
+
+
+29. Python program to display date, month, and year by using built in python modules.
+a=10
+b=8
+#python bin() built-in function
+y=bin(a)
+print(y)
+#python bool() built-in function
+print(a,' is ',bool(a))
+#python callable() built-in function
+print(callable(b))
+#python exec() built-in function
+exec('print(a==10)')
+exec('print(a+4)')
+
+
+Output 
+0b1010
+10 is True
+False
+True
+14
+
+
+
+
+
+30. Python program to that demonstrates the built-in functions.
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_+=~'''
+my_str = input("Enter a string: ")
+no_punct = ""
+
+for char in my_str:
+    if char not in punctuations:
+        no_punct = no_punct + char
+
+print(no_punct)
+
+Output 
+Enter a string: CO!@#$MP%^&UT*()-=ER_+}{
+COMPUTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+31. Python program to demonstrate the following List functions.
+ 1. Append () 2. Extend () 3. Sort()
+
+# Create a list
+list = []
+# Append elements to the list
+list.append(3)
+list.append(2)
+list.append(1)
+# Add the elements of tuple to the list.
+list.extend((4, 5, 6))
+# Sort the list in ascending order
+list.sort()
+# Print the list
+print("List=",list)
+
+Output 
+List= [1, 2, 3, 4, 5, 6]
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+        </h2>
             
     </div>
 </body>
