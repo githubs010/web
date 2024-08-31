@@ -1,0 +1,829 @@
+
+  
+1.   For creating six levels of headings by using horizontal rules. 
+<html> 
+<head></head> 
+<body> 
+<h1>Welcome to HTML</h1> 
+<h2>Raichur University Raichur</h2> 
+<h3>Dept of Computer Science</h3> 
+<h4>Name : J PRASAD </h4> 
+<h5>Semester : IV Semester</h5> 
+<h6>Reg No : P230N22S038018</h6> 
+</body> 
+</html>
+
+ 
+2.   For creating more than one paragraph by using line breaks <br> tag and spaces with the <pre> tag. 
+<html> 
+<head></head> 
+<body> 
+<p>Welcome to HTML</p><br> 
+<p>Raichur University Raichur</p><br> 
+<p>Dept of Computer Science</p><br> 
+<p>Name :J PRASAD</p><br> 
+<pre>Semester : IV Semester</pre><br> 
+<pre>Reg No :P230N22S038018</pre> 
+</body> 
+</html>
+ 
+3.   To format a text by using text formatting tags, namely (Bold, Italic, strong,    emphasized, small, marked, deleted, inserted, subscript and superscript). 
+
+<html> 
+<head></head> 
+<body> 
+<b>Welcome to HTML</b><br> 
+<strong>Raichur University Raichur</strong><br> 
+<i>Dept of Computer Science</i><br> 
+<mark>Name : J PRASAD </mark><br> 
+<em>Semester : IV Semester</em><br> 
+<small>Reg No :P230N22S038018</small><br> 
+<del>Place : KALLUR </del><br> 
+<ins>Course : M.Sc Computer Science</ins><br> 
+<p>H<sub>2</sub>O</p><br> 
+<p>2<sup>3</sup>=8</p> 
+</body> 
+</html>
+
+4.   For setting styles on the text like text color, text font, text size, text alignment, and background color.   
+<html> 
+<head></head> 
+<body> 
+<h1 style="color:blue;">Welcome to HTML</h1> 
+<h2 style="color:red;font-family:verdana;">Raichur University</h2> 
+<h3 style="font-size:30px;">Dept of Computer Science</h3> 
+<h4 style="align:center;">Name : J PRASAD </h4> 
+</body> 
+</html>
+
+
+5.   For establish a link for a webpage by using <href> tag. 
+<html> 
+<head></head> 
+<body> 
+<h1>Raichur University Website Link</h1> 
+<a href="https://raichuruniversity.ac.in/">Raichur University | Home Page</a> 
+</body> 
+</html>
+
+
+6.   For changing the colours of links i.e visited and unvisited 
+<html> 
+<head> 
+<style> 
+a:link{ 
+color:blue; 
+} 
+a:visited{ 
+color:red; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Raichur University Website Link</h1> 
+<a href="https://raichuruniversity.ac.in/">Raichur University | Home Page</a> 
+</body> 
+</html>  
+
+7.   For adding an image using image tag and set height and width using attributes. 
+<html> 
+<head></head> 
+<body> 
+<h2>Raichur University Logo</h2> 
+<img src="C:\Users\Prasad\Downloads\Telegram Desktop\RU.png" width="500" height="600"></img> 
+</body> 
+</html>
+
+
+8.   For creating ordered lists by using different types of ordering namely, numbered, letters, lowercase letters, roman numbers and uppercase letters. 
+<html> 
+<head></head> 
+<body> 
+<ol> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari BF</li> 
+    <li>Hari Bestiee... : Lav</li> 
+</ol> 
+<ol type="1"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari GF</li> 
+    <li>Hari Bestiee... : Lav</li> 
+</ol> 
+<ol type="A"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari GF</li> 
+    <li>Hari Bestiee... : Lav</li> 
+</ol> 
+<ol type="a"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari GF</li> 
+    <li>Hari Bestiee... : Lav</li> 
+<ol type="I"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari GF</li> 
+    <li>Hari Bestiee... : Lav</li> 
+</ol> 
+<ol type="i"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari GF</li> 
+    <li>Hari Bestiee... : Lav</li>  
+</ol> 
+<ol start="50"> 
+    <li>Ravi</li> 
+    <li>Hari</li> 
+    <li>Hari Friend</li> 
+    <li>Hari BF</li> 
+    <li>Hari Bestiee... : Lav</li>  
+</ol> 
+</body> 
+</html>
+
+
+9.   For creating unordered lists by using different types of ordering namely disc bullets, circle bullets, circle bullets, square bullets and without bullets. 
+<html> 
+<head></head> 
+<body> 
+<ul style="list-style-type:disc"> 
+<li>Ravi</li> 
+<li>Hari</li> 
+<li>Hari FRIEND</li> 
+<li>Hari BF</li> 
+<li>Hari Bestiee... : Lav</li> 
+</ul> 
+<ul style="list-style-type:circle"> 
+<li>Ravi</li> 
+<li>Hari</li> 
+<li>Hari FRIEND</li> 
+<li>Hari BF</li> 
+<li>Hari Bestiee... : Lav</li> 
+</ul> 
+<ul style="list-style-type:square"> 
+<li>Ravi</li> 
+<li>Hari</li> 
+<li>Hari FRIEND</li> 
+<li>Hari BF</li> 
+<li>Hari Bestiee... : Lav</li> 
+</ul> 
+<ul style="list-style-type:none"> 
+<li>Ravi</li> 
+<li>Hari</li> 
+<li>Hari FRIEND</li> 
+<li>Hari BF</li> 
+<li>Hari Bestiee... : Lav</li> 
+</ul> 
+</body> 
+</html>
+
+
+ 
+10. To illustrate marquee tag with its slide, scroll and alternate behaviour.
+<html> 
+<head></head> 
+<body> 
+<p>Slide</p> 
+<marquee behavior="slide" bgcolor="pink">Raichur University</marquee><br> 
+<p>Scroll</p> 
+<marquee behavior="scroll" bgcolor="green" style="color:white">Master of 
+Science</marquee><br> 
+<p>Alternate</p> 
+<marquee style="color:red" direction="down" behavior="alternate" bgcolor="yellow" 
+width="300" height="300">Dept of Compter Science</marquee> 
+</body> 
+</html>
+
+
+11. For a Table consisting of information about Students and illustrate row span and Column span attributes. 
+<html> 
+<head> 
+<style> 
+table, th, td { 
+border:1px solid black; 
+border-collapse:collapse; 
+text-align:center; 
+</style> 
+</head> 
+<body> 
+<table> 
+<tbody> 
+<tr> 
+<th colspan="2">Name</th> 
+<th rowspan="2">Age</th> 
+<th rowspan="2">Course</th> 
+<th rowspan="2">Dept</th> 
+</tr> 
+<tr> 
+<th>First Name</th> 
+<th>Last Name</th> 
+</tr> 
+<tr> 
+<td>Prasad</td> 
+<td>J</td> 
+<td>24</td> 
+<td rowspan="3">M.Sc.</td> 
+<td rowspan="3">CS</td> 
+</tr> 
+<tr> 
+<td>Ravi</td> 
+<td>Kuamr</td> 
+<td>24</td> 
+</tr> 
+<tr> 
+<td>Hari</td> 
+<td>Shankar</td>
+<td>24</td> 
+</tr> 
+</tbody> 
+</table> 
+</body> 
+</html>
+
+12. For a Table consisting of information about Company and illustrate cell padding  and cell spacing attributes. 
+<html> 
+<head> 
+<style> 
+table, th, td { 
+border:1px solid black; 
+text-align:center; 
+padding:10px; 
+} 
+</style> 
+</head> 
+<body> 
+<table cellspacing="10px"> 
+<tbody> 
+<tr> 
+<th colspan="4">Employee's Detail's</th> 
+</tr> 
+<tr> 
+<th>Emp Id</th> 
+<th>Emp Name</th> 
+<th>Dept No</th> 
+<th>Emp City</th> 
+</tr> 
+<tr> 
+<td>101</td> 
+<td>J Prasad</td> 
+<td>18</td> 
+<td>Lingasugur</td> 
+</tr> 
+<tr> 
+<td>102</td> 
+<td>Ravi</td> 
+<td>12</td> 
+<td>Raichur</td> 
+</tr> 
+</tbody> 
+</table> 
+</body>
+
+
+13. For inserting audio and video. 
+<html> 
+<head></head> 
+<body> 
+<h2>Click Play button to play audio</h2> 
+<audio src="D:\sample-3s.mp3" controls=""></audio> 
+<h2>Click Play button to play video</h2> 
+<video src="D:\prasad.mp4" 
+controls=""></video> 
+</body> 
+</html>
+
+
+14. For creating four horizontal frames. 
+<html> 
+<head> 
+<title>Frame tag</title> 
+</head> 
+<frameset rows="50%,50%"> 
+<frame src="C:\Users\Prasad\Pictures\RUR.png"> 
+<frame src="C:\Users\Prasad\Pictures\RUR.png"> 
+</frameset> 
+</html>
+
+
+15. For creating four vertical frames.
+ <html> 
+<head> 
+<title>Frame tag</title> 
+</head> 
+<frameset cols="50%,50%">
+<frame src="C:\Users\Prasad\Pictures\RU.png"> 
+<frame src="C:\Users\Prasad\Pictures\RU.png"> 
+</frameset> 
+</html>
+
+
+16. For navigation between Web Pages. 
+<html> 
+<head></head> 
+<body> 
+<h1>The Navigation Links</h1> 
+<nav> 
+<a href="https://www.google.com">Google | Home Page</a><br> 
+<a href="https://raichuruniversity.ac.in">Raichur University | Home Page</a><br> 
+<a href="https://gug.ac.in">Gulbarga University | Home Page</a> 
+</nav> 
+</body> 
+</html>
+
+
+17. For creating a form which is used to select different kinds of user input namely text fields, password fields, radio buttons, checkboxes and submit button elements. 
+<html> 
+<head></head> 
+<body> 
+<h2>HTML Forms</h2> 
+<form> 
+<h3>User inputs</h3> 
+<lable>First Name : </lable><input type"text"=""><br> 
+<lable>Last Name : </lable><input type"text"=""><br> 
+<h3>Radio Buttons</h3> 
+<input type="radio"><lable>HTML</lable><br> 
+<input type="radio"><lable>CSS</lable><br> 
+<input type="radio"><lable>JAVA</lable><br> 
+<h3>Check Boxs</h3> 
+<input type="checkbox"><lable>HTML</lable><br> 
+<input type="checkbox"><lable>CSS</lable><br> 
+<input type="checkbox"><lable>JAVA</lable><br> 
+<h3>User id, Password and Submit Button</h3> 
+<lable>User id : </lable><input type"text"=""><br> 
+<lable>Password : </lable><input type"text"=""><br> 
+<input type="Button" value="Submit" /> 
+</form> 
+</body> 
+</html>   
+
+
+18. For creating form of user contact Address which contains name, address, city, state, country, zip, mobile number of user. 
+<Html>   
+    <head>    
+    <title>   
+    User Contact Address    
+    </title>   
+    </head>   
+    <body bgcolor="skyblue">  <br>  <br>   
+    <form>   
+    <h1> User Contact Address Form : </h1> <br>  
+    <label> Firstname </label>          
+    <input type="text"/> <br> <br>   
+    <label> Middlename: </label>      
+    <input type="text"/> <br> <br>   
+    <label> Lastname: </label>          
+    <input type="text"/> <br> <br>     
+    <label>Contry :  </label>    
+    <select> 
+    <option>Contry</option>   
+    <option>India</option>   
+    <option>Others</option>     
+    </select> <br> <br> 
+    <label>State :  </label>    
+    <select> 
+    <option>State</option> 
+    <option>Andhra Pradesh</option> 
+    <option>Arunachal Pradesh</option> 
+    <option>Assam</option> 
+    <option>Bihar</option> 
+    <option>Chhattisgarh</option> 
+    <option>Gujarat</option> 
+    <option>Haryana</option> 
+    <option>Himachal Pradesh</option> 
+    <option>Jammu and Kashmir</option> 
+    <option>Goa</option> 
+    <option>Jharkhand</option> 
+    <option>Karnataka</option> 
+    <option>Kerala</option> 
+    <option>Madhya Pradesh</option> 
+    <option>Maharashtra</option> 
+    <option>Manipur</option> 
+    <option>Meghalaya</option> 
+    <option>Mizoram</option> 
+    <option>Nagaland</option> 
+    <option>Odisha</option> 
+    <option>Punjab</option> 
+    <option>Rajasthan</option> 
+    <option>Sikkim</option> 
+    <option>Tamil Nadu</option> 
+    <option>Telangana</option> 
+    <option>Tripura</option> 
+    <option>Uttarakhand</option> 
+    <option>Uttar Pradesh</option> 
+    <option>West Bengal</option> 
+    <option>Andaman and Nicobar Islands</option> 
+    <option>Chandigarh</option> 
+    <option>Dadra and Nagar Haveli</option> 
+    <option>Daman and Diu</option> 
+    <option>Delhi</option> 
+    <option>Lakshadweep</option> 
+    <option>Puducherry</option> 
+    </select> <br> <br> 
+    <label>Address : </label> <br>   
+    <textarea cols="80" rows="5">  </textarea>  <br> <br>   
+    <label>Zip Code:</label>   
+    <input type="text" size="6"/> <br>    <br> 
+    <label>Mobile No :  </label>   
+    <input type="text" value="+91" size="2"/>    
+    <input type="text" size="10"/> <br> <br>     
+    <input type="button" value="Submit"/>   
+    </form>   
+    </body>   
+</html>   
+
+
+
+19. For creating a form for a student registration. 
+<Html>   
+    <head>    
+    <title>   
+    Registration Page   
+    </title>   
+    </head>   
+    <body bgcolor="skyblue">   
+    <br>   
+    <br>   
+    <form>   
+    <h1> Student Registration Form : </h1> <br>  
+    <label> Firstname </label>          
+    <input type="text" name="firstname" size="15"/> <br> <br>   
+    <label> Middlename: </label>      
+    <input type="text" name="middlename" size="15"/> <br> <br>   
+    <label> Lastname: </label>          
+    <input type="text" name="lastname" size="15"/> <br> <br>   
+    <label>    
+    Course :   
+    </label>    
+    <select>   
+    <option value="Course">Course</option>   
+    <option value="BCA">BCA</option>   
+    <option value="BBA">BBA</option>   
+    <option value="B.Tech">B.Tech</option>   
+    <option value="MBA">MBA</option>   
+    <option value="MCA">MCA</option>   
+    <option value="M.Tech">M.Tech</option>   
+    </select>   
+    <br>   
+    <br>   
+    <label>    
+    Gender :   
+    </label><br>   
+    <input type="radio" name="male"/> Male <br>   
+    <input type="radio" name="female"/> Female <br>   
+    <input type="radio" name="other"/> Other   
+    <br>   
+    <br>   
+    <label>    
+    Phone :   
+    </label>   
+    <input type="text" name="country code"  value="+91" size="2"/>    
+    <input type="text" name="phone" size="10"/> <br> <br>   
+    Address   
+    <br>   
+    <textarea cols="80" rows="5" value="address">   
+    </textarea>   
+    <br> <br>   
+    Email:   
+    <input type="email" id="email" name="email"/> <br>     
+    <br> <br>   
+    Password:   
+    <input type="Password" id="pass" name="pass"> <br>    
+    <br> <br>   
+    Re-type password:   
+    <input type="Password" id="repass" name="repass"> <br> <br>   
+    <input type="button" value="Submit"/>   
+    </form>   
+    </body>   
+    </html>  
+
+
+ Develop an CSS based HTML document for the following assignments: 
+20. To perform Text Transformation 
+<html> 
+<head> 
+<style> 
+.text-to-transform { 
+bgcolor:yellow; 
+} 
+#transform-uppercase:checked ~ .text-to-transform { 
+text-transform: uppercase; 
+} 
+#transform-lowercase:checked ~ .text-to-transform { 
+text-transform: lowercase; 
+} 
+#transform-capitalize:checked ~ .text-to-transform { 
+text-transform: capitalize; 
+} 
+</style> 
+</head> 
+<body> 
+<h1> Text transform styles : </h1> 
+<input type="radio" name="text-transform" id="transform-uppercase"> 
+<label for="transform-uppercase">Uppercase</label> 
+<input type="radio" name="text-transform" id="transform-lowercase"> 
+<label for="transform-lowercase">Lowercase</label> 
+<input type="radio" name="text-transform" id="transform-capitalize"> 
+<label for="transform-capitalize">Capitalize</label> 
+<h1 class="text-to-transform">This is some text.</h1> 
+</body> 
+</html>
+
+
+21. To perform word spacing and letter spacing. 
+<html> 
+<head> 
+<style> 
+h2 { 
+letter-spacing: 5px; 
+} 
+h3 { 
+word-spacing: 10px; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Using letter-spacing</h1> 
+<h2>This is heading 1</h2> 
+<h3>This is heading 2</h3> 
+</body> 
+</html>
+
+ 
+22. To show Text shadow colour. 
+<html> 
+<head> 
+<style> 
+h1 { 
+text-shadow: 10px 10px 10px rgb(0, 4, 255); 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Text-shadow with blur effect</h1> 
+</body> 
+</html>
+
+
+23. To show same padding on all sides 
+<html> 
+<head> 
+<style> 
+div { 
+border: 1px solid rgb(39, 1, 1); 
+background-color: rgb(48, 236, 211); 
+padding-top: 50px; 
+padding-right: 30px; 
+padding-bottom: 50px; 
+padding-left: 80px; 
+} 
+</style> 
+</head> 
+<body> 
+<h2>Using individual padding properties</h2> 
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom 
+padding of 50px, and a left padding of 80px.</div> 
+</body> 
+</html>
+
+
+
+24. To show CSS font-size property. 
+<html> 
+<head> 
+<style> 
+h1 { 
+font-size: 50px; 
+} 
+h2 { 
+font-size: 40px; 
+} 
+p { 
+font-size: 30px; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>This is heading 1</h1> 
+<h2>This is heading 2</h2> 
+<p>This is a paragraph.</p> 
+<p>Specifying the font-size in percent and em displays the same size in all major 
+browsers, and allows all browsers to resize the text!</p> 
+</body> 
+</html>
+
+
+
+25. To create Image Gallery. 
+<html> 
+<head> 
+<style> 
+div.gallery { 
+margin: 5px; 
+border: 1px solid red; 
+float: left; 
+} 
+div.gallery:hover { 
+border: 1px solid #777; 
+} 
+div.gallery img { 
+width: 100%; 
+height: auto; 
+} 
+div.desc { 
+padding: 15px; 
+text-align: center; 
+} 
+</style> 
+</head> 
+<body> 
+<div class="gallery"> 
+<a target="_blank"> 
+<img src="C:\Users\Prasad\Pictures\AB.png" width="500" 
+height="600"></img> 
+</a> 
+<div class="desc">Add a description of the image here</div> 
+</div> 
+<div class="gallery"> 
+<a target="_blank"> 
+ 
+<img src="C:\Users\Prasad\Pictures\RUM.png" alt="Forest" width="600" 
+height="400"> 
+</a> 
+<div class="desc">Add a description of the image here</div> 
+</div> 
+<div class="gallery"> 
+<a target="_blank"> 
+<img src="C:\Users\Prasad\Pictures\RU.png" alt="Northern Lights" 
+width="600" height="400"> 
+</a> 
+<div class="desc">Add a description of the image here</div> 
+</div> 
+<div class="gallery"> 
+<a target="_blank"> 
+<img src="C:\Users\Prasad\Pictures\RUR.png" alt="Mountains" width="600" 
+height="400"> 
+</a> 
+<div class="desc">RU LOGS</div> 
+</div> 
+</body> 
+</html>
+
+     Develop an XML based HTML document for the following assignments: 
+26. To show the book information in a bookstore 
+<html> 
+<head></head> 
+<body> 
+<bookstore> 
+<book> 
+<booktitle>Book Title 1</booktitle><br/> 
+<author>Author 1</author><br/> 
+<genre>Fiction</genre><br/> 
+<price>19.99</price><br/><br/> 
+</book> 
+<book> 
+<booktitle>Book Title 2</booktitle><br/> 
+<author>Author 2</author><br/> 
+<genre>Non-fiction</genre><br/> 
+<price>15.99</price><br/><br/> 
+</book> 
+</bookstore> 
+</body> 
+</html>
+
+
+27. To show the status of employee details. 
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<employees> 
+    <employee department="ENG"> 
+        <name id="1">Upendra Roul</name> 
+        <position>Software Developer</position> 
+        <joinyear>2010</joinyear> 
+        <salary>6000</salary> 
+    </employee> 
+    <employee department="ENG"> 
+        <name id="2">Jay Prakash</name> 
+        <position>Tester</position> 
+        <joinyear>2010</joinyear> 
+        <salary>7000</salary> 
+    </employee> 
+    <employee department="HR"> 
+        <name id="3">Rekha Sharma</name> 
+        <position>HR</position> 
+        <joinyear>2005</joinyear> 
+        <salary>7000</salary> 
+    </employee> 
+    <employee department="HK"> 
+        <name id="4">Rohit S</name> 
+        <position>Housekeeping</position> 
+        <joinyear>2000</joinyear> 
+        <salary>3000</salary> 
+    </employee> 
+</employees>
+
+
+      Write a JavaScript program for the following assignments: 
+28. To create a dialogue box with “Welcome to my website” message. 
+<html> 
+<head> 
+<title>Welcome Page</title> 
+</head> 
+<body> 
+<script> 
+document.write("Welcome to my website") 
+</script> 
+</body> 
+</html>
+
+
+
+29. To display time and print the message accordingly 
+<html> 
+<head> 
+    <title>Time-Based Message</title> 
+</head> 
+<body> 
+    <script> 
+        var currentTime = new Date(); 
+        var currentHour = currentTime.getHours(); 
+        var message; 
+        if (currentHour >= 0 && currentHour < 4) { 
+            message = "Mid Night!"; 
+ }else if (currentHour >= 4 && currentHour < 12) { 
+            message = "Good morning!"; 
+        } else if (currentHour >= 12 && currentHour < 16) { 
+            message = "Good afternoon!"; 
+        } else if (currentHour >= 16 && currentHour < 20) { 
+            message = "Good evening!"; 
+ } else { 
+            message = "Good night!"; 
+        } 
+        alert("The current time is: " + currentTime.toLocaleTimeString() + "\n" + message); 
+    </script> 
+</body> 
+</html>
+
+
+30. To display Fibonacci series. 
+<html> 
+<head>   
+<title> Fibonacci Series in JavaScript </title>   
+</head> 
+<body> 
+<script>  
+var n1 = 0,  n2 = 1, n3, i;   
+var num = parseInt (prompt (" Enter the limit for Fibonacci Series "));   
+document.write( "Fibonacci Series: ");   
+for ( i = 1; i <= num; i++)   
+{   
+document.write (" <br> " +  n1);   
+n3 = n1 + n2;     
+n1 = n2;  
+n2 = n3; 
+}   
+</script> 
+</body> 
+</html>
+
+31. To display the square of a given numbers. 
+<html>   
+<head>   
+<title> Square of a number in JavaScript </title>   
+</head>   
+<body>   
+<script>   
+var sqr; 
+var num = parseInt (prompt (" Enter the number : "));   
+document.write( "Square of given number is : ");   
+sqr=num*num; 
+document.write(sqr);  
+</script>   
+</body>   
+</html>
+Output
+ 
+ 
+32. To define a user defined function for sorting the values in an array. 
+<!DOCTYPE html> 
+<html> 
+<body>  
+<script> 
+var myarr = [];  
+var size= prompt('Enter size of array '); 
+for(var i=0; i<size; i++) { 
+myarr[i] = prompt('Enter Element ' + (i+1)); 
+} 
+myarr.sort(function(a, b){return a - b}); 
+document.writeln(myarr); 
+</script> 
+</body> 
+</html>
+
